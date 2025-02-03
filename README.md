@@ -1,6 +1,4 @@
-# Langcompiler
-
-A secure and scalable service that executes code snippets in multiple programming languages, Current supporting -  Python, Java, JavaScript, and C++.
+**LangCompiler** is a cloud-native, high-performance service carefully designed for secure, scalable execution of code across a wide variety of programming languages. It now supports strong features in four of the most widely used programming languages: Python, Java, JavaScript, and C++, with future plans to expand its language support based on community demand. With dynamic resource constraints, advanced error handling, and comprehensive execution metrics, the service is particularly well-suited for educational platforms, technical tests, automated testing platforms, and enterprise applications requiring reliable code execution features.
 
 ## Table of Contents
 - [Features](#features)
@@ -20,6 +18,16 @@ A secure and scalable service that executes code snippets in multiple programmin
 - Docker containerization
 
 ## API Documentation
+
+### Supported Languages
+Gets all the current supported languages
+
+**Endpoint**: `GET /languages`
+
+**Response**:
+```bash
+{ "languages": [ "python", "cpp", "javascript", "java" ] }
+```
 
 ### Execute Code
 Executes code in the specified programming language.
